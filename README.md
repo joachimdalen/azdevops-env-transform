@@ -119,7 +119,7 @@ See the [open issues](https://github.com/joachimdalen/azdevops-env-transform/iss
 
 ## Contributing
 
-Contributions are welcome, both in the form of suggestions and code. Create
+Contributions are welcome, both in the form of suggestions and code.
 
 If you want to contribute code, I ask that you follow some guidelines.
 
