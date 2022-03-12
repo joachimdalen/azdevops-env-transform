@@ -1,0 +1,47 @@
+{
+  "name": "env-transform",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild": "rimraf ./dist && rimraf ./*.vsix",
+    "build": "tsc -p .",
+    "postbuild": "webpack --config webpack.config",
+    "test": "mocha -r ts-node/register ./src/tests/unit/**/*.spec.ts",
+    "test:coverage": "nyc mocha ./src/tests/unit/**/*.spec.ts --reporter xunit --reporter-option output=ResultsFile.xml",
+    "test:integration": "mocha ./dist/tests/feature/_suite.js",
+    "test:integration:coverage": "mocha ./dist/tests/feature/_suite.js --reporter xunit --reporter-option output=ResultsFile.xml",
+    "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
+    "clean": "rimraf ./dist"
+  },
+  "dependencies": {
+    "azure-pipelines-task-lib": "3.1.0"
+  },
+  "nyc": {
+    "all": true,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "include": [
+      "src/**"
+    ],
+    "exclude": [
+      "src/tests/*"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/mockery": "^1.4.29",
+    "@types/node": "^14.17.4",
+    "@types/q": "^1.5.4",
+    "copy-webpack-plugin": "^9.0.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^3.9.10",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  }
+}

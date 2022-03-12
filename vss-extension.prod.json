@@ -1,0 +1,64 @@
+{
+  "manifestVersion": 1,
+  "id": "env-transform",
+  "name": "Env Transform",
+  "version": "1.2.3",
+  "publisher": "JoachimDalen",
+  "public": true,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "A task to perform variable replacement for environment files",
+  "categories": ["Azure Pipelines"],
+  "tags": ["pipeline", "build", "transformation", ".env", "replace", "variable", "substitution"],
+  "files": [
+    {
+      "path": "tasks/env-transform/dist/bundle",
+      "packagePath": "/env-transform/env-transform"
+    }
+  ],
+  "icons": {
+    "default": "extension-icon.png"
+  },
+  "content": {
+    "details": { "path": "marketplace/docs/README.md" },
+    "changelog": { "path": "marketplace/docs/CHANGELOG.md" }
+  },
+  "branding": {
+    "color": "#198695",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/joachimdalen/azdevops-env-transform"
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://docs.devops-extensions.dev/docs/extensions/env-transform"
+    },
+    "repository": {
+      "uri": "https://github.com/joachimdalen/azdevops-env-transform"
+    },
+    "support": {
+      "uri": "https://github.com/joachimdalen/azdevops-env-transform/issues"
+    },
+    "privacypolicy": {
+      "uri": "https://docs.devops-extensions.dev/docs/privacy"
+    },
+    "license": {
+      "uri": "https://github.com/joachimdalen/azdevops-env-transform/blob/master/LICENSE"
+    }
+  },
+  "contributions": [
+    {
+      "id": "057845f0-8352-446f-a666-cb0e1f1055e3",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "env-transform/env-transform"
+      }
+    }
+  ]
+}
