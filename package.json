@@ -31,6 +31,8 @@
     "package-dev": "tfx extension create --root ./ --manifest-globs ./vss-extension.dev.json",
     "lint": "lerna run lint --parallel",
     "build": "lerna run build --parallel",
-    "lint:fix": "lerna run lint:fix --parallel"
+    "lint:fix": "lerna run lint:fix --parallel",
+    "test:integration": "lerna run test:integration --parallel",
+    "test:integration:coverage": "lerna run test:integration:coverage --parallel"
   }
 }
