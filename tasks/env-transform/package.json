@@ -3,9 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "rimraf ./dist && rimraf ./*.vsix",
-    "build": "tsc -p .",
-    "postbuild": "webpack --config webpack.config",
+    "precompile:dev": "rimraf ./dist && tsc -p .",
+    "precompile:prod": "rimraf ./dist && tsc -p .",
+    "compile:dev": "webpack --config webpack.config",
+    "compile:prod": "webpack --config webpack.config --mode production",
     "test": "mocha -r ts-node/register ./src/tests/unit/**/*.spec.ts",
     "test:coverage": "nyc mocha ./src/tests/unit/**/*.spec.ts --reporter xunit --reporter-option output=ResultsFile.xml",
     "test:integration": "mocha ./dist/tests/feature/_suite.js",
@@ -15,7 +16,7 @@
     "clean": "rimraf ./dist"
   },
   "dependencies": {
-    "azure-pipelines-task-lib": "3.1.0"
+    "azure-pipelines-task-lib": "^3.1.0"
   },
   "nyc": {
     "all": true,
