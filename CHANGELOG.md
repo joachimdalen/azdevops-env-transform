@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.3.0 (2022-03-13)
+
+### 🛠️ Maintenance (1)
+
+#### `EnvTransform@0.4.0`
+
+- Update dependencies
+
+### 📝 Documentation (1)
+
+#### `EnvTransform@0.4.0`
+
+- Update docs
+
+---
+
 ## 1.2.3 (2021-12-17)
 
 ### 🛠️ Maintenance (1)
