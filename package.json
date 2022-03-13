@@ -34,5 +34,8 @@
     "lint:fix": "lerna run lint:fix --parallel",
     "test:integration": "lerna run test:integration --parallel",
     "test:integration:coverage": "lerna run test:integration:coverage --parallel"
+  },
+  "dependencies": {
+    "@joachimdalen/azext": "^0.7.0"
   }
 }
