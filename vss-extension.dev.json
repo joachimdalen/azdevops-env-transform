@@ -48,7 +48,7 @@
       "uri": "https://docs.devops-extensions.dev/docs/privacy"
     },
     "license": {
-      "uri": "https://github.com/joachimdalen/azdevops-env-transform/blob/master/LICENSE"
+      "uri": "https://github.com/joachimdalen/azdevops-env-transform/blob/main/LICENSE"
     }
   },
   "contributions": [
