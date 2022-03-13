@@ -16,7 +16,7 @@
     <br />
     <a href="https://marketplace.visualstudio.com/items?itemName=joachimdalen.env-transform">View Extension</a>
     ·
-    <a href="https://github.com/joachimdalen/azdevops-env-transform/blob/master/CHANGELOG.md">Changelog</a>
+    <a href="https://github.com/joachimdalen/azdevops-env-transform/blob/main/CHANGELOG.md">Changelog</a>
     ·
     <a href="https://github.com/joachimdalen/azdevops-env-transform/issues">Report Bug</a>
     ·
@@ -25,7 +25,7 @@
 </div>
 
 <div align="center">
-  <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/dalenapps/6531387f-baea-443c-a284-0d0e786e56c3/46?color=0078d7&label=Master%20Build&logo=azure-devops&style=flat-square">
+  <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/dalenapps/6531387f-baea-443c-a284-0d0e786e56c3/46?color=0078d7&label=main%20Build&logo=azure-devops&style=flat-square">
   <img alt="Issues" src="https://img.shields.io/github/issues/joachimdalen/azdevops-env-transform.svg?style=flat-square">
   <img alt="License" src="https://img.shields.io/github/license/joachimdalen/azdevops-env-transform?style=flat-square">
 </div>
@@ -141,9 +141,9 @@ If you want to contribute code, I ask that you follow some guidelines.
 
 ## Release and merge strategy
 
-- `master` is only deployed to `PROD` and tagged with `v<extension_version>`
-  - Pull requests are always squash merged into `master`
-  - `master` is the only branch where GitHub releases are created for
+- `main` is only deployed to `PROD` and tagged with `v<extension_version>`
+  - Pull requests are always squash merged into `main`
+  - `main` is the only branch where GitHub releases are created for
 - `feature/*` and `bugfix/*` are deployed to `DEV`.
 
 `DEV` is a private development and verfication environments (publications of the extensions.)

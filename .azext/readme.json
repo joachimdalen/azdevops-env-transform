@@ -1,0 +1,25 @@
+{
+  "partials": {
+    "env-transform": { "file": "../tasks/env-transform/docs/README.md" },
+    "replace-inline": { "file": "../tasks/env-transform/docs/examples/replace-inline.md" },
+    "replace-file": { "file": "../tasks/env-transform/docs/examples/replace-file.md" },
+    "substitute-inline": { "file": "../tasks/env-transform/docs/examples/substitue-inline.md" }
+  },
+  "profiles": [
+    {
+      "name": "github",
+      "imageFolder": "marketplace/docs/images",
+      "relative": true
+    },
+    {
+      "name": "marketplace",
+      "imageFolder": "marketplace/docs/images",
+      "relative": false
+    },
+    {
+      "name": "doc-site",
+      "imageFolder": "/img/env-transform/",
+      "relative": false
+    }
+  ]
+}
